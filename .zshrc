@@ -286,25 +286,6 @@ function zshrc()
     vim ~/.zshrc
 }
 
-function bitswifi()
-{
-    #cd ~/Downloads/bin; ./caa
-    if [ $# -eq 1 ]
-    then
-        if [ $1 == "-d" ]
-        then
-        /home/$USER/Downloads/bin/caa -d
-        else
-            if [ $1 == "s" ]
-            then
-                /home/$USER/Downloads/bin/caa -s
-            fi
-        fi
-    else
-        /home/$USER/Downloads/bin/caa
-    fi
-}
-
 function groffc()
 {
     if [[ $1 == *.ms ]]
@@ -385,11 +366,6 @@ function lcd()
 {
     cd $1
     ls
-}
-
-function vncconnect()
-{
-    /home/$USER/Downloads/VNC-Viewer-6.19.715-Linux-x64
 }
 
 PATH="/home/$USER/perl5/bin${PATH:+:${PATH}}"; export PATH;

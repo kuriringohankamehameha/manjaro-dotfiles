@@ -407,3 +407,7 @@ export PATH=$PATH:$HOME/scripts
 
 #Setting TERM when using Vim inside tmux
 #[ -z "$TMUX" ] && export TERM="xterm-256color"
+
+function valgrind_check() {
+    valgrind --leak-check=full --main-stacksize=1024 --show-leak-kinds=all "$@"
+}

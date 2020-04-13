@@ -44,6 +44,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tell-k/vim-autopep8'
 Plug 'flazz/vim-colorschemes'
 Plug 'luochen1990/rainbow'
+Plug 'flrnd/candid.vim'
 
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
 

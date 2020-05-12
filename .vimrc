@@ -545,3 +545,10 @@ endfunction
 "endif
 "
 
+" Map jj to <Esc>
+inoremap jj <Esc>
+
+" Removes annoying hues on WSL Vim
+if (&term =~ '^xterm' && &t_Co == 256)
+      set t_ut= | set ttyscroll=1
+endif
